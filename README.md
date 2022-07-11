@@ -1,4 +1,6 @@
 This script converts exported notes from Google Keep to a notes.json file that can be imported by SimpleNote.
+Google Keep titles will be added as the first line in the content of the Simplenote note. 
+Google Keep labels are converted in Simplenote tags.
 
 # usage
 To export Google Keep notes as Json, see: https://takeout.google.com/.
