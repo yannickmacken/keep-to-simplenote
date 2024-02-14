@@ -19,7 +19,7 @@ aggregate_dic = {
 for filename in json_files_in_folder:
     with open(join(folder_path, filename), encoding="utf-8") as f:
         dic = json.loads(f.read())
-        if not dic['isArchived']:
+        if not dic['isArchived'] and 'textContent' in dic:
             aggregate_dic["activeNotes"].append(
                 {
                     "content": dic["title"] + "\r\n\r\n" + dic["textContent"],
